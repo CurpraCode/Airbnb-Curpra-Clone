@@ -1,6 +1,10 @@
 import Head from "next/head";
 import Header from "../components/Header";
 import Background from "../components/Background";
+import Explore from "../components/Explore";
+import CarouselLargeCard from "../components/CarouselLargeCard";
+import Banner from "../components/Banner";
+import CarouselCardTwo from "../components/CarouselCardTwo";
 
 export default function Home() {
   return (
@@ -10,7 +14,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />
-      <Background/>
+      <Background />
+      <Explore />
+      <CarouselLargeCard />
+      <Banner/>
+      <CarouselCardTwo/>
+
+      
     </div>
   );
 }
