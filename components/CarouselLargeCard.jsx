@@ -12,7 +12,7 @@ const CarouselLargeCard = ()=>{
                             <img src={dataUrl + datas.img} className="rounded-lg" layout="fill" alt={datas.title}/>
                         </div>
                         <span>
-                        <h3  className="text-2xl mt-3">{datas.title}</h3>
+                        <h3  className="text-1xl mt-3">{datas.title}</h3>
                     </span>
                     </div>
                 ))}

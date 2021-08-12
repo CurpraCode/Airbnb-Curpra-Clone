@@ -5,6 +5,7 @@ import Explore from "../components/Explore";
 import CarouselLargeCard from "../components/CarouselLargeCard";
 import Banner from "../components/Banner";
 import CarouselCardTwo from "../components/CarouselCardTwo";
+import Host from "../components/Host";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <CarouselLargeCard />
       <Banner/>
       <CarouselCardTwo/>
+      <Host/>
 
       
     </div>
