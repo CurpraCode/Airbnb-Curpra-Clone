@@ -3,8 +3,8 @@ const CarouselCardTwo = ()=>{
     const data =discover.items
     const dataUrl =discover.urlPrefix
     return(
-        <div className="max-w-7xl mx-auto px-8 sm:px-10">
-            <h2 className="text-4xl font-semibold py-8">{discover.title}</h2>
+        <div className="max-w-6xl mx-auto mt-10 px-8 sm:px-10">
+            <h2 className="text-2xl font-semibold py-8">{discover.title}</h2>
             <div className="flex space-x-3 overflow-scroll scrollbar-hide p-3 -ml-3">
                 {data.map((datas, index)=>(
                     <div key={index} className="cursor-pointer hover:scale-105 transform transition duration-300 ease-out">
