@@ -54,5 +54,15 @@ const Bg = styled.div`
     transition: all .2s;   
     box-shadow: 0 .5rem 1.5rem -.5rem currentColor;
 }
+@media (max-width: 36rem) {
+    background: linear-gradient(to bottom, #0a0c2c80 3rem, transparent),
+      url(images/hero-sm.jpg);
+    background-position: center, bottom left;
+    background-size: cover, cover;
+    align-items: flex-start;
+    padding-top: 7.5rem;
+    height: 75vh;
+    max-height: 720px;
+  }
 
 `;
