@@ -2,8 +2,7 @@ import styled from "styled-components";
 import { Search, Globe, Menu, User } from "react-feather";
 // import Image from "next/image";
 import { useRef, useEffect, useState } from "react";
-// import DatePicker from "./DatePicker";
-// import ThemeToggle from "./ThemeToggle";
+import DateComp from "./DateComp";
 import { useMediaQuery } from "@react-hook/media-query";
 import { useRouter } from "next/router";
 import MobileNav from "./NavRes";
@@ -183,7 +182,7 @@ export default function Header({ placeholder }) {
           </button>
         </form>
         {inputFocus && (
-          <DatePicker
+          <DateComp
             className="datepicker"
             close={closeDatePicker}
             checkInDate={{ value: checkInDate, setValue: setCheckInDate }}
