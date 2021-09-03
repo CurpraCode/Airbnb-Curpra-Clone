@@ -13,6 +13,10 @@ export default function Home() {
     <div>
       <Head>
         <title>Airbnb-Clone</title>
+        <meta
+          name="description"
+          content="Find holiday rentals, cabins, beach houses, unique homes and experiences around the world – all made possible by Hosts on Airbnb."
+        />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />

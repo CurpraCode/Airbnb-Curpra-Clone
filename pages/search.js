@@ -2,11 +2,11 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import SearchOutput from "../components/SearchOutput";
-// import Map from "../components/Map";
+import MapBox from "../components/MapBox";
 import { useRouter } from "next/router";
 import { format } from "date-fns";
 import { useState } from "react";
-// import getCenter from "geolib/es/getCenter";
+import getCenter from "geolib/es/getCenter";
 
 export default function Search({ searchResults }) {
   const router = useRouter();
@@ -18,32 +18,32 @@ export default function Search({ searchResults }) {
   } guests`;
  const [selectedLocation, setSelectedLocation] = useState({});
 
-//   const coordinates = [...searchResults].slice(1).map((result) => ({
-//     longitude: result.long,
-//     latitude: result.lat,
-//   }));
-//   const center = getCenter(coordinates);
+  const coordinates = [...searchResults].slice(1).map((result) => ({
+    longitude: result.long,
+    latitude: result.lat,
+  }));
+  const center = getCenter(coordinates);
 
-//   const [viewport, setViewport] = useState({
-//     latitude: center.latitude,
-//     longitude: center.longitude,
-//     zoom: 11,
-//   });
+  const [viewport, setViewport] = useState({
+    latitude: center.latitude,
+    longitude: center.longitude,
+    zoom: 11,
+  });
   return (
     <>
       <Header placeholder={placeholder} />
       <main>
-        {/* <Map
+        <MapBox
           results={searchResults}
           selectedLocation={selectedLocation}
           setSelectedLocation={setSelectedLocation}
           viewport={viewport}
           setViewport={setViewport}
-        /> */}
+        />
         <SearchOutput
           setSelectedLocation={setSelectedLocation}
           results={searchResults}
-        //   setViewport={setViewport}
+          setViewport={setViewport}
         />
       </main>
       <Footer />
