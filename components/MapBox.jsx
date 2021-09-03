@@ -29,7 +29,7 @@ export default function MapBox({
     <MapContainer ref={containerRef}>
       <ReactMapGL
         mapStyle="mapbox://styles/curtsoyaks/ckt45p8zc0r3617o5u1mcr7h4"
-        mapboxApiAccessToken=""
+        mapboxApiAccessToken={process.env.mapbox_key}
         {...viewport}
         width="100%"
         height="100%"
